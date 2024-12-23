@@ -29,7 +29,7 @@ export interface Event {
   export interface EventModalProps {
     isOpen: boolean;
     onClose: () => void;
-    event?: Event;
+    event?: Event | null;
     date?: Date;
     onSave: (event: Event) => void;
     onDelete?: (eventId: string) => void;

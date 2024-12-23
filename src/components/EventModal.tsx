@@ -18,7 +18,7 @@ const EventModal: React.FC<EventModalProps> = ({
   const [startTime, setStartTime] = useState(event?.startTime || '09:00');
   const [endTime, setEndTime] = useState(event?.endTime || '10:00');
   const [description, setDescription] = useState(event?.description || '');
-  const [color, setColor] = useState(event?.color || 'default');
+  const [color, setColor] = useState<string>(event?.color || 'default');
 
   useEffect(() => {
     if (event) {
